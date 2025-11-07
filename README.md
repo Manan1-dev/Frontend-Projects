@@ -56,11 +56,6 @@ Correct key flashes **green**, incorrect key flashes **red**.
 -   Visual feedback on success/failure
 -   Smooth background color transition
 
-**Future Improvements:**
-
--   Accessibility (focus styles, ARIA labels)
--   Configurable speed and key range
-
 ---
 
 ### 4. Guess a Number
@@ -76,12 +71,6 @@ A number guessing game where the computer picks a number between **1–100** and
 -   Countdown of remaining tries
 -   Reset button after win/loss
 -   Dynamic feedback for high/low guesses
-
-**Future Improvements:**
-
--   Range validation for inputs
--   Persisting best score using `localStorage`
--   Add difficulty levels
 
 ---
 
