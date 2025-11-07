@@ -56,11 +56,6 @@ Correct key flashes **green**, incorrect key flashes **red**.
 -   Visual feedback on success/failure
 -   Smooth background color transition
 
-**Future Improvements:**
-
--   Accessibility (focus styles, ARIA labels)
--   Configurable speed and key range
-
 ---
 
 ### 4. Guess a Number
