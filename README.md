@@ -21,3 +21,26 @@ You have limited time to click the mole and score as many points as possible.
 -   Countdown timer
 -   Score tracking
 -   Start button with disabled state during the game
+
+### 2. Color Changer
+
+**Folder:** `color-changer`  
+**Tech:** HTML, CSS, JavaScript (DOM, event delegation)
+
+A simple UI that lets the user change the page background by clicking on color tiles.  
+There are two color palettes:
+
+-   **Dark palette** – deep, rich colors (midnight blue, charcoal, burgundy, etc.)
+-   **Light palette** – soft, pastel colors (ivory, sky blue, peach, lavender, etc.)
+
+When the user clicks a color:
+
+-   The **`<body>` background color** changes to the selected color.
+-   The heading text color automatically switches to **dark or light** for better contrast depending on whether the chosen color is from the dark or light palette.
+
+**Features:**
+
+-   Config-driven color mapping using a `COLORS` object in JavaScript
+-   Buttons styled dynamically based on their `data-color-key` attribute
+-   Event delegation on the palette wrapper instead of individual listeners
+-   Basic responsive layout for smaller screens
