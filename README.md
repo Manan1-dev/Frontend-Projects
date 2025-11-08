@@ -96,29 +96,33 @@ Buttons disable after rolling to prevent re-rolls until reset.
 
 ---
 
-## 🧠 Lessons Learned
+### 6. ✂️ Rock Paper Scissors
 
--   DOM manipulation and event listeners are powerful but can get messy — small helpers and modular thinking go a long way.
--   Consistency in naming (`camelCase` for JS, `kebab-case` for CSS classes) improves readability.
--   Avoid “magic values” — declare constants for reusability.
--   Always validate input and handle edge cases before processing logic.
+A simple yet polished **Rock Paper Scissors** game built using **HTML**, **CSS**, and **Vanilla JavaScript**.
 
 ---
 
-## ⚙️ Tech Stack
+**Features**
+
+-   Play against the computer with random AI-generated choices.
+-   Instant feedback on win, lose, or tie.
+-   Clean and minimal dark-themed UI.
+-   Accessible updates using ARIA live regions.
+-   Automatic game reset after a few seconds.
+
+---
+
+## 🧠 Tech Stack
 
 -   **HTML5**
--   **CSS3 (Flexbox, Grid)**
--   **Vanilla JavaScript (DOM, Events, Timers)**
--   No frameworks — pure practice for mastering the fundamentals.
+-   **CSS3 (Flexbox Layout)**
+-   **JavaScript (ES6)**
 
 ---
 
 ## 🚀 How to Run
 
-Clone the repo, then open any project folder and launch `index.html` in your browser.
-
-```bash
-git clone https://github.com/<your-username>/frontend-projects.git
-cd frontend-projects
-```
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/<your-username>/rock-paper-scissors.git
+    ```

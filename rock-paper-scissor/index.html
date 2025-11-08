@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rock Paper Scissors | Play vs Computer</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main class="wrapper">
+            <h1>Rock Paper Scissors</h1>
+
+            <section class="all-buttons">
+                <button data-inner-value="rock" class="option-btn">
+                    🥌Rock
+                </button>
+                <button data-inner-value="paper" class="option-btn">
+                    📃 Paper
+                </button>
+                <button data-inner-value="scissors" class="option-btn">
+                    ✂ Scissors
+                </button>
+            </section>
+
+            <section class="result">
+                <p>
+                    You chose:
+                    <span id="user-choice" aria-atomic="polite">-</span>
+                </p>
+                <p>
+                    Computer chose:
+                    <span id="computer-choice" aria-atomic="polite">-</span>
+                </p>
+                <h2
+                    id="winner-message"
+                    aria-atomic="polite"
+                    aria-label="Winner Message"
+                    aria-live="polite"
+                ></h2>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
