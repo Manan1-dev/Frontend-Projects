@@ -39,7 +39,7 @@ A simple Body Mass Index calculator that lets users enter their weight and heigh
 ### ⚙️ How to Run
 
 ```bash
-cd 1. bmi-calculator
+cd 01. bmi-calculator
 open index.html
 ```
 
@@ -66,7 +66,7 @@ An interactive web app that changes the background color based on the tile you c
 ### ⚙️ How to Run
 
 ```bash
-cd 2. color-changer
+cd 02. color-changer
 open index.html
 ```
 
@@ -93,7 +93,7 @@ A live digital clock displaying the current time, AM/PM indicator, date, and wee
 ### ⚙️ How to Run
 
 ```bash
-cd 3. digital-clock
+cd 03. digital-clock
 open index.html
 ```
 
@@ -121,7 +121,7 @@ A fun number-guessing game where players have 10 tries to guess a randomly gener
 ### ⚙️ How to Run
 
 ```bash
-cd 4. guess-number
+cd 04. guess-number
 open index.html
 ```
 
@@ -148,7 +148,7 @@ A typing reflex game that shows a random letter — the player must press the ma
 ### ⚙️ How to Run
 
 ```bash
-cd 5. key-matcher
+cd 05. key-matcher
 open index.html
 ```
 
@@ -175,7 +175,7 @@ Play the classic Rock–Paper–Scissors game against the computer.
 ### ⚙️ How to Run
 
 ```bash
-cd 6. rock-paper-scissor
+cd 06. rock-paper-scissor
 open index.html
 ```
 
@@ -202,7 +202,7 @@ A two-player dice game. Each player rolls once; the higher number wins.
 ### ⚙️ How to Run
 
 ```bash
-cd 7. roll-dice-game
+cd 07. roll-dice-game
 open index.html
 ```
 
@@ -230,7 +230,7 @@ A timed clicking game where moles (emojis) appear randomly in a 3×3 grid. Playe
 ### ⚙️ How to Run
 
 ```bash
-cd 8. whack-a-mole
+cd 08. whack-a-mole
 open index.html
 ```
 
