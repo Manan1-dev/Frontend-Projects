@@ -300,7 +300,6 @@ calculator/
 - Performs basic math operations:
 ```js
 addition(a, b), subtract(a, b), multiply(a, b), division(a, b), percentage(a, b)
-````
 
 #### d) grouper.js
 
@@ -327,7 +326,7 @@ User clicks:
 ```
 1 → 2 → + → 3 → =
 ```
-
+````
 Processing:
 
 1. **app.js** collects entries → `['1', '2', '+', '3']`
