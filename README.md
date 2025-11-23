@@ -15,6 +15,7 @@ Each project focuses on DOM manipulation, user interaction, accessibility, and c
 6. **Rock-Paper-Scissors** – Classic game versus the computer with result display.
 7. **Roll Dice Game** – Two-player dice roll with winner detection.
 8. **Whack-a-Mole** – Timed clicking game where moles appear randomly in a 3×3 grid.
+9. **Calculator** - A fully modular, vanilla JavaScript calculator built without using `eval()`.
 
 ---
 
@@ -236,42 +237,142 @@ open index.html
 
 ---
 
-## 🗂️ Project Structure
+## 📟 9. Modular JavaScript Calculator
 
-```
-.
-├── bmi-calculator/
-├── color-changer/
-├── digital-clock/
-├── guess-number/
-├── key-matcher/
-├── rock-paper-scissors/
-├── roll-dice-game/
-└── whack-a-mole/
-```
-
-Each folder contains:
-
-```
-├── index.html
-├── style.css
-└── script.js
-```
+A **fully modular, vanilla JavaScript calculator** built without using `eval()`.
+This calculator separates **UI, input validation, arithmetic operations, and evaluation** into ES Modules for clean, maintainable, and scalable code.
 
 ---
 
-## 💡 Future Enhancements
+## 🚀 Features
 
--   Add score history using LocalStorage
--   Include sound effects for game actions
--   Add difficulty settings
--   Create a landing page linking all 8 projects
--   Improve mobile responsiveness
+-   Basic arithmetic: `+`, `-`, `*`, `/`, `%`
+-   Multi-digit and decimal numbers
+-   AC (All Clear) and DEL (Delete last digit)
+-   Fully modular architecture with ES Modules
+-   Clean UI with grid layout
+-   Input validation for operators and numbers
+-   Safe arithmetic evaluation without `eval()`
+
+---
+
+### 📁 Project Structure
+
+````
+calculator/
+│
+├── index.html
+├── style.css
+├── app.js                    ← Main Controller
+├── modules/
+│   ├── arithmetic-operations.js   ← Arithmetic functions (+, -, *, /, %)
+│   ├── validators.js             ← Input validation and checks
+│   ├── display.js                ← Updates screen display
+│   ├── grouper.js                ← Groups numbers and operators
+│   └── evaluator.js              ← Calculates final result
+
+---
+
+---
+
+## 🧠 How It Works
+
+### 1️⃣ HTML & CSS
+- `index.html` defines the **display** and **calculator buttons**.
+- `style.css` provides a modern dark UI with hover and active effects.
+- The layout uses **CSS Grid** for buttons and a responsive display.
+
+---
+
+### 2️⃣ Modular JS Design
+
+#### a) app.js
+- Handles all **button click events**
+- Stores raw input keys in an array
+- Calls **validators**, **grouper**, **display updater**, and **evaluator**
+
+#### b) validators.js
+- Checks if a key is a **number** or **operator**
+- Checks if a key is a **special key** (`AC`, `DEL`, `=`)
+- Ensures **input is valid**, e.g., no consecutive operators
+
+#### c) arithmetic-operations.js
+- Performs basic math operations:
+```js
+addition(a, b), subtract(a, b), multiply(a, b), division(a, b), percentage(a, b)
+````
+
+#### d) grouper.js
+
+-   Converts raw key entries like `['1','2','+','3']` → grouped tokens `['12','+','3']`
+-   Handles **multi-digit numbers** and **decimals**
+
+#### e) evaluator.js
+
+-   Processes grouped tokens
+-   Computes final result safely **without eval()**
+-   Returns the numeric result for display
+
+#### f) display.js
+
+-   Updates the calculator screen (`#display`)
+-   Handles AC, DEL, and normal key appending
+
+---
+
+### 3️⃣ Example Flow
+
+User clicks:
+
+```
+1 → 2 → + → 3 → =
+```
+
+Processing:
+
+1. **app.js** collects entries → `['1', '2', '+', '3']`
+2. **grouper.js** combines digits → `['12', '+', '3']`
+3. **evaluator.js** computes → `12 + 3 = 15`
+4. **display.js** updates screen → shows `15`
+
+---
+
+## 🖥️ How to Run
+
+1. Make sure your project files are structured as shown above.
+2. Open `index.html` in any modern browser.
+3. Or run via **VS Code Live Server** for instant reloads.
+4. Make sure the `<script>` tag uses `type="module"`:
+
+```html
+<script type="module" src="app.js"></script>
+```
+
+## 🗂️ Projects Structure
+
+```
+
+.
+├── 01. bmi-calculator/
+├── 02. color-changer/
+├── 03. digital-clock/
+├── 04. guess-number/
+├── 05. key-matcher/
+├── 06. rock-paper-scissors/
+├── 07. roll-dice-game/
+└── 08. whack-a-mole/
+└── 09. calculator/
+
+```
 
 ---
 
 ## 🧠 Author
 
-**Abdul Manan**  
-Frontend Developer | JavaScript Enthusiast  
+**Abdul Manan**
+Web Developer | JavaScript Enthusiast
 📧 mananabdul3142@gmail.com
+
+```
+
+```
