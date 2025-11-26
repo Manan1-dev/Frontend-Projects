@@ -57,14 +57,41 @@ hr {
     white-space: wrap;
 }
 
-#todo-categories {
-    padding: 0 0.5rem;
+.filter-options {
+    padding: 0.25rem 0.5rem;
     cursor: pointer;
+    margin-bottom: 0.4rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease, border-radius 0.2s ease;
 }
 
-#category-list {
-    padding: 0 0.5rem;
+.filter-options:hover {
+    background-color: rgba(148, 163, 184, 0.1);
+    border-radius: 1rem;
+}
+
+.nav-li {
+    margin-top: 0.3rem;
+    padding: 0 1rem;
     list-style-type: none;
+
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-4px);
+    transition: max-height 0.25s ease, opacity 0.25s ease, transform 0.25s ease,
+        padding-top 0.25s ease, padding-bottom 0.25s ease;
+
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.filter-options:hover .nav-li {
+    max-height: 40px;
+    opacity: 1;
+    transform: translateY(0);
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
 }
 
 .main-content {
