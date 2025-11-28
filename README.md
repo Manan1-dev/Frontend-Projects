@@ -1,4 +1,4 @@
-<img src="[PASTE-LINK-HERE](https://github.com/abdulmanan-js-dev/Frontend-Projects/blob/main/frontned.png)" alt="Frontend Projects Banner" width="100%" />
+<img src="https://github.com/abdulmanan-js-dev/Frontend-Projects/blob/main/frontned.png" alt="Frontend Projects Banner" width="100%" />
 
 # 🧩 Vanilla JavaScript Mini Projects
 
