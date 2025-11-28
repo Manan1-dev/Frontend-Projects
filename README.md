@@ -1,3 +1,5 @@
+<img src="[PASTE-LINK-HERE](https://github.com/abdulmanan-js-dev/Frontend-Projects/blob/main/frontned.png)" alt="Frontend Projects Banner" width="100%" />
+
 # 🧩 Vanilla JavaScript Mini Projects
 
 [![GitHub Stars](https://img.shields.io/github/stars/abdulmanan-js-dev/Frontend-Projects?style=flat&color=yellow)](https://github.com/abdulmanan-js-dev/Frontend-Projects)
@@ -397,7 +399,7 @@ open index.html
 
 **Abdul Manan**  
 Web Developer | JavaScript Enthusiast  
-📧 **mananabdul3142@gmail.com**
+📧 **fokamystic@gmail.com**
 
 ---
 
