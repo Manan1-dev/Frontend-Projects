@@ -1,0 +1,41 @@
+@import url("fonts.googleapis.com");
+@import "tailwindcss";
+
+@theme {
+    /* ---- LIGHT MODE ---- */
+    --color-lightBg: #f5f5f5;
+    --color-lightSideBar: #ffffff;
+    --color-lightCards: #ffffff;
+    --color-lightTextPrim: #202124;
+    --color-lightTextSec: #5f6368;
+    --color-lightAccentBtn: #4f46e5;
+    --color-lightBorder: #e5e7eb;
+    --color-activeItem: #eee
+
+    /* ---- DARK MODE ---- */
+    --color-darkBg: #1f1f1f;
+    --color-darkSideBar: #262626;
+    --color-darkCards: #2d2d2d;
+    --color-darkTextPrim: #f5f5f5;
+    --color-darkTextSec: #a1a1a1;
+    --color-darkAccentBtn: #6366f1;
+    --color-darkBorder: #3a3a3a;
+    --color-activeItem: #6366e7
+    
+    /* ---- FONT FAMILY ---- */
+    --font-display: "Inter", sans-serif;
+}
+
+@layer components {
+    .app-title {
+        @apply text-2xl font-bold;
+    }
+
+    .section-title {
+        @apply text-lg font-medium;
+    }
+
+    .task-text {
+        @apply text-base font-normal;
+    }
+}

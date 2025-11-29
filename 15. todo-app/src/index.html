@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"
+        />
+        <link href="./output.css" rel="stylesheet" />
+        <title>TickTask - ToDo App</title>
+    </head>
+    <body>
+        <div id="app-container" class="min-h-screen bg-lightBg flex flex-col">
+            <!-- HEADER CONTENT HERE -->
+            <header
+                class="border-b flex justify-between items-center md:px-4 md:py-3"
+            >
+                <!-- App Title -->
+                <h1 class="app-title">TickTask</h1>
+
+                <!-- Search & Toggle Wrapper -->
+                <div class="flex items-center gap-4">
+                    <!-- -- Search Box -- -->
+                    <div class="flex items-center relative">
+                        <input
+                            type="text"
+                            placeholder="Search..."
+                            class="border px-3 py-1.5 rounded-lg bg-lightCards"
+                            id="search-input"
+                        />
+                        <span
+                            class="material-symbols-outlined absolute right-2 text-lightTextPrim"
+                        >
+                            search
+                        </span>
+                    </div>
+
+                    <!-- Toggle Button -->
+                    <button
+                        id="themeToggle"
+                        class="border px-3 py-1.5 shadow rounded-lg bg-lightCards"
+                    >
+                        🌓
+                    </button>
+                </div>
+            </header>
+
+            <!-- SIDEBAR & MAIN WRAPPER -->
+            <div class="flex">
+                <!-- SIDEBAR CONTENT HERE -->
+                <aside class="border md:w-[40vh]">sidebar</aside>
+
+                <!-- MAIN CONTENT HERE -->
+                <main class="border flex-1">main</main>
+            </div>
+        </div>
+        <script type="module" src="app.js"></script>
+    </body>
+</html>
