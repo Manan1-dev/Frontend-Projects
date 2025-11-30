@@ -9,6 +9,13 @@
         />
         <link href="./output.css" rel="stylesheet" />
         <title>TickTask - ToDo App</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <div id="app-container" class="h-screen bg-lightBg flex flex-col">
@@ -50,17 +57,48 @@
             <div class="flex flex-1">
                 <!-- SIDEBAR CONTENT HERE -->
                 <aside
-                    class="border md:w-[40vh] flex flex-col md:items-start gap-5 md:px-4 md:py-3 font-semibold"
+                    id="-wrapper"
+                    class="md:w-[40vh] flex flex-col md:items-start gap-5 md:py-3 font-semibold pr-1 bg-lightSideBar"
                 >
-                    <button type="button">All Tasks</button>
-                    <button type="button">Today</button>
-                    <button type="button">Important</button>
-                    <button type="button">Completed</button>
-                    <button type="button">Categories</button>
+                    <button
+                        class="options"
+                        type="button"
+                        data-option="all-tasks"
+                    >
+                        All Tasks
+                    </button>
+                    <button
+                        class="options"
+                        type="button"
+                        data-option="today-tasks"
+                    >
+                        Today
+                    </button>
+                    <button
+                        class="options"
+                        type="button"
+                        data-option="imp-tasks"
+                    >
+                        Important
+                    </button>
+                    <button
+                        class="options"
+                        type="button"
+                        data-option="done-tasks"
+                    >
+                        Completed
+                    </button>
+                    <button
+                        class="options"
+                        type="button"
+                        data-option="categories"
+                    >
+                        Categories
+                    </button>
                 </aside>
 
                 <!-- MAIN CONTENT HERE -->
-                <main class="border flex-1">main</main>
+                <main class="flex-1"></main>
             </div>
         </div>
         <script type="module" src="app.js"></script>
