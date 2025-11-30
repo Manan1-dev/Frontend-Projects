@@ -11,7 +11,7 @@
         <title>TickTask - ToDo App</title>
     </head>
     <body>
-        <div id="app-container" class="min-h-screen bg-lightBg flex flex-col">
+        <div id="app-container" class="h-screen bg-lightBg flex flex-col">
             <!-- HEADER CONTENT HERE -->
             <header
                 class="border-b flex justify-between items-center md:px-4 md:py-3"
@@ -26,7 +26,7 @@
                         <input
                             type="text"
                             placeholder="Search..."
-                            class="border px-3 py-1.5 rounded-lg bg-lightCards"
+                            class="border px-3 py-1.5 rounded-lg bg-lightCards border-lightBorder"
                             id="search-input"
                         />
                         <span
@@ -39,7 +39,7 @@
                     <!-- Toggle Button -->
                     <button
                         id="themeToggle"
-                        class="border px-3 py-1.5 shadow rounded-lg bg-lightCards"
+                        class="border px-3 py-1.5 shadow rounded-lg bg-lightCards border-lightBorder"
                     >
                         🌓
                     </button>
@@ -47,9 +47,17 @@
             </header>
 
             <!-- SIDEBAR & MAIN WRAPPER -->
-            <div class="flex">
+            <div class="flex flex-1">
                 <!-- SIDEBAR CONTENT HERE -->
-                <aside class="border md:w-[40vh]">sidebar</aside>
+                <aside
+                    class="border md:w-[40vh] flex flex-col md:items-start gap-5 md:px-4 md:py-3 font-semibold"
+                >
+                    <button type="button">All Tasks</button>
+                    <button type="button">Today</button>
+                    <button type="button">Important</button>
+                    <button type="button">Completed</button>
+                    <button type="button">Categories</button>
+                </aside>
 
                 <!-- MAIN CONTENT HERE -->
                 <main class="border flex-1">main</main>

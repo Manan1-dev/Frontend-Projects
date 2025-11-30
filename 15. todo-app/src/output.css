@@ -8,6 +8,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-800: oklch(44.4% 0.177 26.899);
     --spacing: 0.25rem;
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
@@ -17,6 +18,7 @@
     --text-2xl--line-height: calc(2 / 1.5);
     --font-weight-normal: 400;
     --font-weight-medium: 500;
+    --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-lg: 0.5rem;
     --default-font-family: var(--font-sans);
@@ -24,6 +26,11 @@
     --color-lightBg: #f5f5f5;
     --color-lightCards: #ffffff;
     --color-lightTextPrim: #202124;
+    --color-lightBorder: #e5e7eb;
+    --color-activeItem: #6366e7
+    
+    /* ---- FONT FAMILY ---- */
+    --font-display: "Inter", sans-serif;
   }
 }
 @layer base {
@@ -199,6 +206,9 @@
   .h-full {
     height: 100%;
   }
+  .h-screen {
+    height: 100vh;
+  }
   .min-h-screen {
     min-height: 100vh;
   }
@@ -241,11 +251,20 @@
   .items-center {
     align-items: center;
   }
+  .items-start {
+    align-items: flex-start;
+  }
   .justify-between {
     justify-content: space-between;
   }
+  .justify-center {
+    justify-content: center;
+  }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
@@ -257,6 +276,9 @@
   .border-b {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
+  }
+  .border-lightBorder {
+    border-color: var(--color-lightBorder);
   }
   .bg-lightBg {
     background-color: var(--color-lightBg);
@@ -279,6 +301,10 @@
   .py-1\.5 {
     padding-block: calc(var(--spacing) * 1.5);
   }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
   .text-lightTextPrim {
     color: var(--color-lightTextPrim);
   }
@@ -293,6 +319,20 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  .outline-none {
+    --tw-outline-style: none;
+    outline-style: none;
+  }
+  .active\:border-activeItem {
+    &:active {
+      border-color: var(--color-activeItem);
+    }
+  }
+  .active\:border-red-800 {
+    &:active {
+      border-color: var(--color-red-800);
+    }
+  }
   .md\:w-\[40vh\] {
     @media (width >= 48rem) {
       width: 40vh;
@@ -306,6 +346,11 @@
   .md\:w-full {
     @media (width >= 48rem) {
       width: 100%;
+    }
+  }
+  .md\:items-start {
+    @media (width >= 48rem) {
+      align-items: flex-start;
     }
   }
   .md\:px-4 {
@@ -343,6 +388,10 @@
   syntax: "*";
   inherits: false;
   initial-value: solid;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
 }
 @property --tw-shadow {
   syntax: "*";
@@ -414,14 +463,11 @@
   inherits: false;
   initial-value: solid;
 }
-@property --tw-font-weight {
-  syntax: "*";
-  inherits: false;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
+      --tw-font-weight: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-shadow-alpha: 100%;
@@ -437,7 +483,6 @@
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
       --tw-outline-style: solid;
-      --tw-font-weight: initial;
     }
   }
 }
