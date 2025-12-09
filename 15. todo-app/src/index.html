@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div id="app-container" class="h-screen bg-lightBg flex flex-col">
+        <div id="app-container" class="h-screen bg-background flex flex-col">
             <!-- HEADER CONTENT HERE -->
             <header
                 class="border-b flex justify-between items-center md:px-4 md:py-3"
@@ -26,9 +26,9 @@
                 <!-- App Title -->
                 <h1 class="app-title">TickTask</h1>
 
-                <!-- Search & Toggle Wrapper -->
+                <!-- Search Wrapper -->
                 <div class="flex items-center gap-4">
-                    <!-- -- Search Box -- -->
+                    <!-- Search Box -->
                     <div class="flex items-center relative">
                         <input
                             type="text"
@@ -42,14 +42,6 @@
                             search
                         </span>
                     </div>
-
-                    <!-- Toggle Button -->
-                    <button
-                        id="themeToggle"
-                        class="border px-3 py-1.5 shadow rounded-lg bg-lightCards border-lightBorder"
-                    >
-                        🌓
-                    </button>
                 </div>
             </header>
 
@@ -57,13 +49,14 @@
             <div class="flex flex-1">
                 <!-- SIDEBAR CONTENT HERE -->
                 <aside
-                    id="-wrapper"
-                    class="md:w-[40vh] flex flex-col md:items-start gap-5 md:py-3 font-semibold pr-1 bg-lightSideBar"
+                    id="sidebar-wrapper"
+                    class="md:w-64 w-full flex flex-col md:items-stretch gap-2 md:py-4 px-2 font-semibold bg-sidebarBg"
                 >
                     <button
                         class="options"
                         type="button"
                         data-option="all-tasks"
+                        data-active="true"
                     >
                         All Tasks
                     </button>
@@ -98,7 +91,9 @@
                 </aside>
 
                 <!-- MAIN CONTENT HERE -->
-                <main class="flex-1"></main>
+                <main class="flex-1">
+                    <!-- your main content goes here -->
+                </main>
             </div>
         </div>
         <script type="module" src="app.js"></script>
