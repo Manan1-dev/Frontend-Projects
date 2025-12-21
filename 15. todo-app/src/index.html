@@ -26,77 +26,19 @@
         <div id="app-container" class="h-screen bg-primaryBg flex flex-col">
             <!-- HEADER CONTENT -->
             <header
-                class="border-b flex justify-between items-center px-2 py-2 md:px-4 md:py-3"
+                class="border-b flex justify-center items-center px-2 py-2 md:px-4 md:py-3"
             >
                 <!-- App Title -->
-                <h1 class="app-title">TickTask</h1>
-
-                <!-- Search Wrapper -->
-                <div class="flex items-center gap-4">
-                    <!-- Search Box -->
-                    <div class="flex items-center relative">
-                        <label for="search-input" class="sr-only">Search</label>
-                        <input
-                            type="text"
-                            placeholder="Search..."
-                            class="border px-3 py-1.5 rounded-lg bg-primaryCardBg border-borderColor text-sm text-primaryText placeholder:text-secondaryText focus:outline-none focus:ring-2 focus:ring-activeItem focus:border-activeItem"
-                            id="search-input"
-                        />
-                        <span
-                            class="material-symbols-outlined absolute right-2 text-secondaryText pointer-events-none"
-                        >
-                            search
-                        </span>
-                    </div>
-                </div>
+                <h1 class="app-title">
+                    TaskFlow
+                    <span class="text-sm italic text-gray-700"
+                        >Simple Productivity App</span
+                    >
+                </h1>
             </header>
 
-            <!-- SIDEBAR & MAIN WRAPPER -->
-            <!-- added min-h-0 here -->
+            <!-- MAIN WRAPPER -->
             <div class="flex flex-1 flex-col md:flex-row min-h-0">
-                <!-- SIDEBAR CONTENT -->
-                <aside
-                    id="sidebar-wrapper"
-                    class="md:w-64 w-full flex flex-col md:items-stretch gap-2 md:py-4 px-2 font-semibold bg-sidebarBg border-b md:border-b-0 md:border-r border-borderColor"
-                >
-                    <button
-                        class="options"
-                        type="button"
-                        data-option="all-tasks"
-                        data-active="true"
-                    >
-                        All Tasks
-                    </button>
-                    <button
-                        class="options"
-                        type="button"
-                        data-option="today-tasks"
-                    >
-                        Today
-                    </button>
-                    <button
-                        class="options"
-                        type="button"
-                        data-option="imp-tasks"
-                    >
-                        Important
-                    </button>
-                    <button
-                        class="options"
-                        type="button"
-                        data-option="done-tasks"
-                    >
-                        Completed
-                    </button>
-                    <button
-                        class="options"
-                        type="button"
-                        data-option="categories"
-                    >
-                        Categories
-                    </button>
-                </aside>
-
                 <!-- MAIN CONTENT -->
                 <!-- added min-h-0 here -->
                 <main class="flex-1 flex flex-col min-h-0">
@@ -207,9 +149,7 @@
                         <div
                             id="task-list"
                             class="h-full overflow-auto border-2 border-borderColor rounded-xl bg-primaryCardBg gap-2 p-2 flex justify-evenly items-baseline flex-wrap"
-                        >
-                            
-                        </div>
+                        ></div>
                     </section>
                 </main>
             </div>

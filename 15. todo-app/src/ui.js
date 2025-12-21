@@ -86,3 +86,70 @@ export function updateCounter(totalTasks, completedTasks, array) {
     totalTasks.innerText = array.filter((task) => !task.isCompleted).length;
     completedTasks.innerText = array.filter((task) => task.isCompleted).length;
 }
+
+/*
+
+<!-- Search Wrapper -->
+                <div class="flex items-center gap-4">
+                    <!-- Search Box -->
+                    <div class="flex items-center relative">
+                        <label for="search-input" class="sr-only">Search</label>
+                        <input
+                            type="text"
+                            placeholder="Search..."
+                            class="border px-3 py-1.5 rounded-lg bg-primaryCardBg border-borderColor text-sm text-primaryText placeholder:text-secondaryText focus:outline-none focus:ring-2 focus:ring-activeItem focus:border-activeItem"
+                            id="search-input"
+                        />
+                        <span
+                            class="material-symbols-outlined absolute right-2 text-secondaryText pointer-events-none"
+                        >
+                            search
+                        </span>
+                    </div>
+                </div>
+
+
+
+                <aside
+                    id="sidebar-wrapper"
+                    class="md:w-64 w-full flex flex-col md:items-stretch gap-2 md:py-4 px-2 font-semibold bg-sidebarBg border-b md:border-b-0 md:border-r border-borderColor"
+                >
+                    <button
+                        class="options"
+                        type="button"
+                        data-option="all-tasks"
+                        data-active="true"
+                    >
+                        All Tasks
+                    </button>
+                    <button
+                        class="options"
+                        type="button"
+                        data-option="today-tasks"
+                    >
+                        Today
+                    </button>
+                    <button
+                        class="options"
+                        type="button"
+                        data-option="imp-tasks"
+                    >
+                        Important
+                    </button>
+                    <button
+                        class="options"
+                        type="button"
+                        data-option="done-tasks"
+                    >
+                        Completed
+                    </button>
+                    <button
+                        class="options"
+                        type="button"
+                        data-option="categories"
+                    >
+                        Categories
+                    </button>
+                </aside>
+
+*/

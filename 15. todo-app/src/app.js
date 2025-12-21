@@ -45,6 +45,7 @@ form.addEventListener("submit", (e) => {
     };
 
     console.log(task);
+    console.log("ID type", typeof task.id);
     taskArray.push(task);
     updateCounter(totalTasks, completedTasks, taskArray);
     createCard(taskArray, taskList);
@@ -59,12 +60,6 @@ taskList.addEventListener("click", (e) => {
     const action = button.dataset.action;
 
     if (action === "complete") {
-        taskArray.forEach((task) => {
-            task.id == id
-                ? (task.isCompleted = true)
-                : (task.isCompleted = false);
-
-            console.log("updated", task);
-        });
+        
     }
 });
